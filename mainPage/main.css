@@ -1,9 +1,40 @@
 html, body{
     height: 100%;
     margin: 0px;
+    
+    font-family: 'Open Sans', sans-serif;
 }
 header{
     
+}
+#meny{
+    display: none;
+    background-color: #bbb;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+#openmeny{
+    width: 100px;
+}
+#closemeny{
+    position: fixed;
+    top: 70%;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+.menylink{
+    text-decoration: none;
+    font-size: 50px;
+    display: block;
+    margin: 10%;
+    color: #fff;
+}
+.menylink:hover{
+    color: #FF6600;
 }
 #wrapper{
     height: 20%;
