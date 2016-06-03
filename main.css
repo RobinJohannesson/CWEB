@@ -5,7 +5,10 @@ html, body{
     font-family: 'Open Sans', sans-serif;
 }
 header{
-    
+    text-align: center
+}
+#logga{
+    width: 300px;
 }
 #meny{
     display: none;
@@ -16,15 +19,17 @@ header{
     left: 0%;
     top: 0%;
 }
-#openmeny{
-    width: 100px;
-}
-#closemeny{
+#openmeny, #closemeny{
     position: fixed;
-    top: 70%;
+    margin-left: -50px;
     width: 100px;
     left: 50%;
-    margin-left: -50px;
+    top: 80%;
+    animation: snurr 5s infinite linear;
+}
+@keyframes snurr{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
 }
 .menylink{
     text-decoration: none;
@@ -40,5 +45,11 @@ header{
     height: 20%;
 }
 footer{
-    
+    position: fixed;
+    top: 100%;
+    margin-top:-65px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
 }
