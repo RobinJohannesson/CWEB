@@ -4,6 +4,19 @@ html, body{
     
     font-family: 'Open Sans', sans-serif;
 }
+html{
+    animation: gradient_back 10s ease infinite;
+    background: linear-gradient(122deg, #444, #222, #000, #222, #444);
+    background-size: 700% 100%;
+}
+body{
+    background: rgba(200,200,200,0.2);
+}
+@keyframes gradient_back { 
+    0%{background-position:0% 72%}
+    50%{background-position:100% 29%}
+    100%{background-position:0% 72%}
+}
 header{
     text-align: center
 }
@@ -12,7 +25,7 @@ header{
 }
 #meny{
     display: none;
-    background-color: #bbb;
+    background: rgba(200,200,200,0.8);
     position: fixed;
     height: 100%;
     width: 100%;
@@ -24,12 +37,12 @@ header{
     margin-left: -50px;
     width: 100px;
     left: 50%;
-    top: 80%;
+    top: 60%;
     animation: snurr 5s infinite linear;
 }
 @keyframes snurr{
-    from{transform: rotate(0deg)}
-    to{transform: rotate(360deg)}
+    from{transform: rotate(360deg)}
+    to{transform: rotate(0deg)}
 }
 .menylink{
     text-decoration: none;
@@ -45,6 +58,7 @@ header{
     height: 20%;
 }
 footer{
+    color: #f60;
     position: fixed;
     top: 100%;
     margin-top:-65px;
